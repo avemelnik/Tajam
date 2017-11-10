@@ -119,6 +119,8 @@ a:hover{
   }
 }
 
+
+
 h2{
   color: #ffffff;
   font-family: Playfair Display;
@@ -137,7 +139,6 @@ h3{
 }
 
 h4{
-  color: #ffffff;
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 400;
@@ -155,6 +156,14 @@ h5{
   text-transform: uppercase;
   /* Text style for "W, EB DESI" */
   letter-spacing: 0.7px;
+}
+
+.black-text{
+  color: black;
+}
+
+.white-text{
+  color:white;
 }
 
 .button{
@@ -259,6 +268,7 @@ h5{
     letter-spacing: 1.05px;
   }
   ul{
+    margin-top: 4em;
     width:100%;
     height:400px;
     display: flex;
@@ -267,6 +277,7 @@ h5{
       text-align: center;
       width:30%;
       height:50%;
+      margin-top: 3em;
       p{
         width:90%;
         opacity: 0.75;
@@ -281,12 +292,57 @@ h5{
   }
 }
 
-.web:before{
+.display:before{
+  display: block;
   position: relative;
-  left:8em;
-  top:-2em;
+  right: 0.5em;
+  bottom: 2em;
   content: url("../img/display.png");
 }
+
+.pencil:before{
+  display: block;
+  position: relative;
+  right: 0.5em;
+  bottom: 2em;
+  content: url("../img/pancil.png");
+}
+
+.mobile:before{
+  display: block;
+  position: relative;
+  right: 0.5em;
+  bottom: 2em;
+  content: url("../img/mobile.png");
+}
+
+.optimization:before{
+  display: block;
+  position: relative;
+  right: 0.5em;
+  bottom: 2em;
+  content: url("../img/optimization.png");
+}
+
+.game:before{
+  display: block;
+  position: relative;
+  right: 0.5em;
+  bottom: 2em;
+  content: url("../img/game.png");
+}
+
+.hurt:before{
+  display: block;
+  position: relative;
+  right: 0.5em;
+  bottom: 2em;
+  content: url("../img/hurt.png");
+}
+
+
+
+
 
 /*end of expertise*/
 
@@ -297,7 +353,7 @@ h5{
 
 .team-bg{
   position: absolute;
-  z-index: -3;
+  z-index: -2;
   width:100%;
   height: 100%;
 }
@@ -331,8 +387,26 @@ h5{
   height:40%;
   justify-content: space-between;
   li{
-    width:22%;
-    .name{
+    width:100%;
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+      .worker-photo{
+      width:90%;
+      height: 70%;
+      background: white;
+      }
+      .worker-info{
+        width:89%;
+        height: 30%;
+        border: solid white 1px;
+
+      }
+      .name{
       color: #ffffff;
       font-family: "Roboto - Black";
       font-size: 14px;
@@ -340,14 +414,154 @@ h5{
       text-transform: uppercase;
       /* Text style for "S, EMF UCU" */
       letter-spacing: 0.7px;
-    }
-    .work{
+        text-align: center;
+      }
+      .work{
       opacity: 0.7;
       color: #fafafa;
       font-family: Roboto;
       font-size: 13px;
       font-weight: 300;
       text-transform: uppercase;
+        text-align: center;
     }
   }
+}
+
+/*end of our workers*/
+
+.our-works{
+  width:100%;
+  height: 100vh;
+}
+
+.header-works-centering{
+  height: 25%;
+  width:60%;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+    a{
+      color: #413d4b;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.7px;
+    }
+  }
+
+.squares{
+  width:100%;
+  height: 50%;
+  ul{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      width:16.53%;
+      height: 50%;
+      border: solid black 1px;
+      background: #413d4b;
+    }
+  }
+}
+
+.footer-works-centering{
+  width:100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+/*end of our works*/
+
+.comments{
+  width:100%;
+  height: 100vh;
+}
+
+.comments-bg{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  z-index: -4;
+}
+
+.comment-article{
+  height:100%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.comment{
+  height:200px;
+  opacity: 0.85;
+  color: #ffffff;
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  /* Text style for "T, his is" */
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.comment:before{
+  position: relative;
+  content: url("../img/-.png");
+  display:block;
+  bottom:3em;
+}
+
+.commentator{
+  color: #ffffff;
+  font-family: "Roboto - Black";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.comment-signature{
+  width: 102px;
+  height: 9px;
+  opacity: 0.7;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.comment-photos{
+  margin-top: 5em;
+  align-items: center;
+  align-content: center;
+}
+
+.right-arrow{
+  background: none;
+  background-image: url("../img/right-arrow.png");
+  background-repeat: no-repeat;
+  border: none;
+  width: 11px;
+  height: 21px;
+  margin-left: 4em;
+}
+
+.left-arrow{
+  background: none;
+  background-image: url("../img/left-arrow.png");
+  background-repeat: no-repeat;
+  border: none;
+  width: 11px;
+  height: 21px;
+  margin-right: 4em;
 }
