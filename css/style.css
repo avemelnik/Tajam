@@ -95,12 +95,29 @@ a:hover {
     line-height: 24px;
     letter-spacing: 0.7px; }
 
+.slider {
+  margin-top: 5em; }
+  .slider li {
+    margin-left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #c2c2c2; }
+  .slider li:nth-child(1) {
+    margin-left: 0; }
+  .slider li:hover {
+    background-color: #00e0d0; }
+
 h2 {
   color: #ffffff;
   font-family: Playfair Display;
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 0.32px; }
+
+h2:after {
+  content: url("../img/h1-bottom-line.png");
+  display: block; }
 
 h3 {
   color: #413d4b;
@@ -172,6 +189,8 @@ h6 {
     font-weight: 300;
     line-height: 22px;
     letter-spacing: 0.42px; }
+  .our-story button {
+    margin-top: 2em; }
 
 .story {
   justify-content: space-between; }
@@ -213,7 +232,13 @@ h6 {
 
 .expertise {
   width: 100%;
-  height: 100vh; }
+  min-height: 100vh; }
+
+.separator:after {
+  content: url("../img/separator.png");
+  display: block;
+  position: absolute;
+  left: 48.3%; }
 
 .expertise-centering {
   align-items: center;
@@ -227,18 +252,24 @@ h6 {
     font-size: 14px;
     font-weight: 400;
     /* Text style for "Lorem ipsu" */
-    letter-spacing: 1.05px; }
+    letter-spacing: 1.05px;
+    margin: auto; }
   .expertise-centering ul {
     margin-top: 4em;
     width: 100%;
-    height: 400px;
+    height: 430px;
     display: flex;
     flex-wrap: wrap; }
+    .expertise-centering ul li:nth-child(3n) {
+      border-right: none; }
+    .expertise-centering ul li:nth-child(n+4) {
+      border-top: 1px solid #ebebeb; }
     .expertise-centering ul li {
       text-align: center;
       width: 30%;
       height: 50%;
-      margin-top: 3em; }
+      padding-top: 3em;
+      border-right: 1px solid #ebebeb; }
       .expertise-centering ul li p {
         width: 90%;
         opacity: 0.75;
@@ -296,9 +327,9 @@ h6 {
   width: 100%;
   height: 100vh; }
 
-.team-bg {
+.team-img {
   position: absolute;
-  z-index: -2;
+  z-index: -3;
   width: 100%;
   height: 100%; }
 
@@ -322,6 +353,17 @@ h6 {
     font-weight: 400;
     /* Text style for "Lorem ipsu" */
     letter-spacing: 1.05px; }
+  .our-team-centering button {
+    width: 131px;
+    margin-top: 2em; }
+  .our-team-centering h4 {
+    color: #ffffff;
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "MEET OUR A" */
+    letter-spacing: 1.1px; }
 
 .our-worker {
   width: 100%;
@@ -372,11 +414,20 @@ h6 {
   align-content: center;
   align-items: center;
   justify-content: space-between; }
+  .header-works-centering h4 {
+    color: #413d4b;
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "O, UR WORK" */
+    letter-spacing: 1.1px; }
   .header-works-centering a {
     color: #413d4b;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 300;
+    /* Text style for "See All Pr" */
     letter-spacing: 0.7px; }
 
 .squares {
@@ -439,7 +490,7 @@ h6 {
 
 .commentator {
   color: #ffffff;
-  font-family: "Roboto - Black";
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -494,6 +545,14 @@ h6 {
 .form {
   width: 48%;
   height: 80%; }
+  .form h4 {
+    color: #413d4b;
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "G, IVE US" */
+    letter-spacing: 1.1px; }
   .form ul {
     width: 100%;
     height: 100%;
@@ -504,18 +563,28 @@ h6 {
         width: 100%;
         height: 45px;
         border: 1px solid #000000;
-        opacity: 0.3; }
+        opacity: 0.3;
+        padding: 6px 0 6px 12px; }
       .form ul li textarea {
         width: 100%;
         height: 200px;
         background-color: #ffffff;
         border: 1px solid #000000;
         opacity: 0.3;
-        resize: none; }
+        resize: none;
+        padding: 6px 0 6px 12px; }
 
 .clients {
   width: 40%;
   height: 80%; }
+  .clients h4 {
+    color: #413d4b;
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "O, UR HAPP" */
+    letter-spacing: 1.1px; }
 
 .clients-logo {
   width: 100%;
@@ -593,19 +662,17 @@ h6 {
   justify-content: space-between; }
   .social input {
     width: 211px;
-    height: 45px;
+    height: 35px;
     border: 1px solid #ffffff;
-    background: none; }
+    background: none;
+    padding: 6px 0 6px 12px; }
   .social button {
-    margin-left: 2em;
-    margin-top: 0.8em;
-    width: 30px;
-    height: 25px;
+    width: 70px;
+    height: 45px;
+    margin-left: 1em;
     border: 1px solid #ffffff;
-    background-color: #ffffff;
     opacity: 0.5;
-    background-image: url("../img/paper122.png");
-    background-repeat: no-repeat; }
+    background: #a199b4 url(../img/paper122.png) 22px 10px no-repeat; }
 
 .info-contact-social {
   justify-content: space-between; }
