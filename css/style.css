@@ -128,6 +128,16 @@ h5 {
   /* Text style for "W, EB DESI" */
   letter-spacing: 0.7px; }
 
+h6 {
+  color: #ffffff;
+  font-family: "Roboto - Black";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  /* Text style for "O, UR STUD" */
+  letter-spacing: 0.75px; }
+
 .black-text {
   color: black; }
 
@@ -494,13 +504,13 @@ h5 {
         width: 100%;
         height: 45px;
         border: 1px solid #000000;
-        opacity: 0.1; }
+        opacity: 0.3; }
       .form ul li textarea {
         width: 100%;
         height: 200px;
         background-color: #ffffff;
         border: 1px solid #000000;
-        opacity: 0.1;
+        opacity: 0.3;
         resize: none; }
 
 .clients {
@@ -520,5 +530,128 @@ h5 {
     align-items: center;
     width: 45%;
     height: 18%; }
+
+/*end of form*/
+.main-footer {
+  width: 100%;
+  height: 400px; }
+
+.main-footer-centering {
+  height: 300px;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between; }
+
+.footer-img {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  z-index: -3; }
+
+.footer-gradient {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85; }
+
+.footer-header {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center; }
+  .footer-header .footer-logo {
+    width: 30%;
+    height: 100%;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-around; }
+  .footer-header h6 {
+    width: 30%;
+    height: 11px;
+    color: #ffffff;
+    font-family: "Roboto - Black";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "O, UR STUD" */
+    letter-spacing: 0.75px; }
+
+.footer-info {
+  width: 30%; }
+
+.footer-contact {
+  width: 30%; }
+
+.social {
+  width: 30%;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between; }
+  .social input {
+    width: 211px;
+    height: 45px;
+    border: 1px solid #ffffff;
+    background: none; }
+  .social button {
+    margin-left: 2em;
+    margin-top: 0.8em;
+    width: 30px;
+    height: 25px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    opacity: 0.5;
+    background-image: url("../img/paper122.png");
+    background-repeat: no-repeat; }
+
+.info-contact-social {
+  justify-content: space-between; }
+  .info-contact-social p {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.35px; }
+
+.ruko:before {
+  content: url("../img/ruko.png"); }
+
+.phone:before {
+  content: url("../img/phone.png"); }
+
+.social-links {
+  width: 100%;
+  justify-content: space-between; }
+  .social-links li {
+    width: 16%; }
+
+.footer-footer {
+  justify-content: space-between;
+  align-items: center;
+  align-content: center; }
+  .footer-footer p {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.35px; }
+
+.footer-links {
+  width: 30%;
+  height: 10px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  /* Text style for "H, ELP" */
+  letter-spacing: 0.35px;
+  justify-content: space-between; }
 
 /*# sourceMappingURL=style.css.map */
